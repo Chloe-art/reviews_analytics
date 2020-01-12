@@ -18,4 +18,12 @@ sum_lum = 0
 for d in data:
 	sum_lum = sum_lum + len(d)
 
-print('每筆留言的平均長度為', sum_lum)
+print('每筆留言的平均長度為', sum_lum/len(data))
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '筆留言長度小於100')
+print(new[0])
+
