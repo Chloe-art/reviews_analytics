@@ -14,3 +14,8 @@ print(data[9])
 print('----------------------')
 print(data[5])
 
+sum_lum = 0
+for d in data:
+	sum_lum = sum_lum + len(d)
+
+print('每筆留言的平均長度為', sum_lum)
